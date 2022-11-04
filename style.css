@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+    height: 200vh;
+}
+
+/* Navigation */
+.navigation{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 3;
+}
+.navigation .head h1{
+    font-size: 35px;
+    color: white;
+}
+.navigation .head h1 span{
+    color: #f9004d;
+}
+.navigation .nav-items ul{
+    display: flex;
+}
+.navigation .nav-items ul li{
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    list-style: none;
+}
+.navigation .nav-items ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+.navigation .nav-items ul li a:hover{
+    color: #f9004d;
+}
+.navigation .btn{
+    background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 30px;
+	transition: transform .4s; 
+}
+.navigation .btn:hover{
+    transform: scale(1.20);
+}
+.navigation .toglle i{
+    color: white;
+    display: none;
+}
+/* Home */
+.home{
+    min-height: 100vh;
+    background-image: url(./images/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.home .home-data{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 150px;
+}
+.home .home-data h2{
+    color: #fcfc;
+    font-size: 30px;
+}
+.home .home-data h1{
+    margin-top: 20px;
+    font-size: 65px;
+}
+.home .home-data h1 span{
+    color: #f9004d;
+}
+.home .home-data .h2{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+/* Aboutus */
+.aboutus{
+    min-height: 100vh;
+    width: 100%;
+    background-color:#191919;
+}
+.aboutus .about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.aboutus .about img{
+    margin-top: 80px;
+    height: 550px;
+}
+.aboutus .about .about-data{
+    margin-top: 220px;
+    margin-left: 40px;
+}
+.aboutus .about .about-data h1{
+    color: white;
+    font-size: 60px;
+}
+.aboutus .about .about-data h2{
+    color: white;
+    font-size: 30px;
+    margin-top: 30px;
+}
+.aboutus .about .about-data span{
+    color: #f9004d;
+}
+.aboutus .about .about-data p{
+    color: #fcfc;
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 1.4rem;
+}
+/* Services */
+.service{
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+.service .title{
+    text-align: center;
+    color: white;
+}
+.service .title h1{
+    position: relative;
+    padding-top: 120px;
+    font-size: 50px;
+}
+.service .boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.service .boxes .data-1{
+    width: 300px;
+    height: 300px;
+    background-color: #191919;
+    margin-top: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 10px 15px #191919;
+    border-radius: 20px;
+    text-align: center;
+}
+.service .boxes .data-1 h1{
+    color: white;
+    font-size: 25px;
+    padding-top: 50px;
+}
+.service .boxes .data-1 p{
+    color: #fcfc;
+    padding-top: 35px;
+}
+.service .boxes .data-1 .tag{
+    margin: auto;
+    width: 130px;
+    height: 40px;
+    background-color: #f9004d;
+    border-radius: 20px;
+    color: white;
+    margin-top: 20px;
+    transition: 0.4s;
+}
+.service .boxes .data-1 .tag h2{
+    padding-top: 11px;
+    font-size: 20px;
+}
+.service .boxes .data-1 .tag:hover{
+    background-color: black;
+    border: 1px#f9004d solid;
+    cursor: pointer;
+}
+/* Skills */
+.skills{
+    width: 100%;
+    min-height: 40vh;
+    background-color: #191919;
+    text-align: center;
+}
+.skills h1{
+    padding-top: 120px;
+    color: white;
+}
+.skills .button{
+    margin: auto;
+    width: 130px;
+    height: 40px;
+    background-color: #f9004d;
+    border-radius: 20px;
+    color: white;
+    margin-top: 20px;
+    transition: 0.4s;
+}
+.skills .button h2{
+    padding-top: 11px;
+    font-size: 20px;
+}
+.skills .button:hover{
+    background-color: black;
+    border: 1px#f9004d solid;
+    cursor: pointer;
+}
+/* Contact */
+.contact{
+    min-height: 50vh;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
+.contact h1{
+    padding-top: 50px;
+    color: white;
+}
+.contact p{
+    color: #fcfc;
+    padding-top: 40px;
+}
+.contact .icons{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contact .icons span{
+    margin: 20px;
+}
+.contact .icons span i{
+    color: #f9004d;
+}
+.contact h2{
+    font-size: 15px;
+    color: #f9004d;
+    margin-top: 20px;
+}
+@media screen and (max-width:1024px) {
+    .service .boxes .data-1{
+        margin-bottom: 2px;
+    }
+}
+@media screen and (max-width:800px) {
+    .navigation{
+        width: 100%;
+    }
+    .navigation .nav-items{
+        display: none;
+    }
+    .navigation .btn{
+        display: none;
+    }
+    .navigation .toglle span i{
+        display: block;
+    }
+    .aboutus .about{
+        margin: auto;
+    }
+    .aboutus .about-data{
+        padding-bottom: 150px;
+        text-align: center;
+        margin: 0;
+    }
+    .service .boxes .data-1{
+        margin-bottom: 60px;
+    }
+}
+@media screen and (max-width:435px) {
+    .home{
+        width: 100%;
+    }
+    .home .home-data{
+        margin: 0;
+        padding-top: 200px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:412px) {
+    .aboutus .about .image img{
+        width: 100%;
+    }
+}
+
+
+
